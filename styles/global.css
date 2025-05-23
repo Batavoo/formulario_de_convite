@@ -30,15 +30,31 @@
 
   /* Feedback Color */
   --feedback-danger: #ff5959;
+
+  /* Input Colors */
+  --input-base: #1c1f21;
+  --input-stroke: #363b40;
+  --input-placeholder: #869198;
+
+  /* Shape Colors */
+  --shape-background: #131516;
+  --shape-body: #212427;
+  --shape-button: #2d3136;
+  --shape-hover: #383d42;
+
+  /* Text Colors */
+  --text-body: #c8cdd0;
+  --text-heading: #f9f9f9;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  background-color: blue;
+  background-color: var(--shape-background);
+  overflow: hidden;
+  color: var(--text-body);
 }
