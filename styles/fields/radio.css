@@ -1,0 +1,17 @@
+.radio-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.radio-inner{
+  border: 1px solid var(--input-stroke);
+  border-radius: .5rem;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  input, input:focus, input:hover{
+    all: unset;
+  }
+}

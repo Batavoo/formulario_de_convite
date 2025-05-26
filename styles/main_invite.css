@@ -1,0 +1,43 @@
+.main-container {
+ 
+  h1{
+    font: var(--text-heading-md);
+    color: var(--text-heading);
+    margin-bottom: 2.5rem;
+  }
+}
+
+form > .about {
+  border: none;
+  display: grid;
+  grid-template-areas: 
+    'about about'
+    'title title'
+    'start end'
+    'type local'
+    'description description';
+  /* gap: 1rem; */
+
+  .event-title-wrapper {
+    grid-area: title;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .start-end-wrapper {
+    grid-area: start / start / end / end;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .input-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      width: 100%;
+    }
+  }
+}
+
+
