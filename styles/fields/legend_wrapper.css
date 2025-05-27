@@ -1,0 +1,18 @@
+.legend-wrapper{
+  grid-area: about;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: .5rem;
+
+  legend {
+    font: var(--text-heading-sm);
+    color: var(--text-heading);
+  }
+
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+

@@ -1,17 +1,37 @@
 .radio-wrapper {
+  background-color: var(--input-base);
+  grid-area: type;
   display: flex;
-  align-items: center;
+  border: 1px solid var(--input-stroke);
+  border-radius: .5rem;
+}
+
+input[type="radio"] {
+  display: none;
 }
 
 .radio-inner{
-  border: 1px solid var(--input-stroke);
-  border-radius: .5rem;
-
+  padding: 0.65rem 1rem;
+  border: 4px solid var(--input-base);
+  border-radius: .6rem;
   display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  input, input:focus, input:hover{
-    all: unset;
+  cursor: pointer;
+  color: var(--text-body);
+  font: var(--text-body-sm);
+}
+
+.radio-inner:has(input[type=radio]:checked) {
+  background-color: var(--shape-button);
+  color: var(--text-heading);
+  font: var(--text-body-sm-semibold);
+  
+  svg path{
+    fill: var(--brand-light);
   }
 }
+

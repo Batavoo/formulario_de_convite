@@ -1,2 +1,3 @@
 @import '../fields/radio.css';
-@import '../fields/general_wrappers.css'
+@import '../fields/legend_wrapper.css';
+@import './input-wrapper.css';

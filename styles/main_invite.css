@@ -1,14 +1,16 @@
 .main-container {
- 
-  h1{
+   h1{
     font: var(--text-heading-md);
     color: var(--text-heading);
     margin-bottom: 2.5rem;
   }
 }
 
-form > .about {
+form fieldset {
   border: none;
+}
+
+form > .section-about {
   display: grid;
   grid-template-areas: 
     'about about'
@@ -16,13 +18,13 @@ form > .about {
     'start end'
     'type local'
     'description description';
-  /* gap: 1rem; */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 
   .event-title-wrapper {
     grid-area: title;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
   }
 
   .start-end-wrapper {
@@ -34,8 +36,11 @@ form > .about {
     .input-wrapper {
       display: flex;
       flex-direction: column;
-      gap: 0.5rem;
       width: 100%;
+      
+      input {
+        color: var(--input-text);
+      }
     }
   }
 }
