@@ -27,15 +27,10 @@
 
     textarea {
       resize: vertical;
-      min-height: 5rem;
-      max-height: 10rem;
+      min-height: 10rem;
+      max-height: 20rem;
     }
   }
-
-.event-title-wrapper {
-  grid-area: local;
-  width: 100%;
-}
 
 .event-description-wrapper {
   grid-area: description;

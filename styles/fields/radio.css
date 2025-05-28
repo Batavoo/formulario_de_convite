@@ -35,3 +35,42 @@ input[type="radio"] {
   }
 }
 
+.color-picker{
+display: flex;
+align-items: flex-start;
+justify-content: space-between;
+gap: 1rem;
+
+.radio-option{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0px solid var(--shape-button);
+  border-radius: 50%;
+  cursor: pointer;
+  background: transparent;
+  position: relative;
+  padding: 0;
+}
+
+.radio-option .color-circle {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--accent-green); /* ou a cor desejada */
+  border: 8px solid var(--shape-button); /* borda entre círculo e caixa */
+  box-sizing: border-box;
+}
+
+.radio-option:has(input[type=radio]:checked) {
+  border: solid 4px var(--brand-light);
+}
+
+.green {
+  background-color: var(--accent-green);
+}
+
+}

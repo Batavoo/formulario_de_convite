@@ -8,6 +8,8 @@
 
 form fieldset {
   border: none;
+  margin-bottom: 2.5rem; 
+  /* Pode ter algo melhor que esse margin-bottom */
 }
 
 form > .section-about {
@@ -45,4 +47,11 @@ form > .section-about {
   }
 }
 
+form .section-custom{
+  display: flex;
+  flex-direction: column;
 
+  .legend-wrapper{
+    margin-bottom: 1.5rem;
+  }
+}
