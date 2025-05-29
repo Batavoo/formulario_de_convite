@@ -1,5 +1,5 @@
 .main-container {
-   h1{
+  h1 {
     font: var(--text-heading-md);
     color: var(--text-heading);
     margin-bottom: 2.5rem;
@@ -8,18 +8,18 @@
 
 form fieldset {
   border: none;
-  margin-bottom: 2.5rem; 
+  margin-bottom: 2.5rem;
   /* Pode ter algo melhor que esse margin-bottom */
 }
 
 form > .section-about {
   display: grid;
-  grid-template-areas: 
-    'about about'
-    'title title'
-    'start end'
-    'type local'
-    'description description';
+  grid-template-areas:
+    "about about"
+    "title title"
+    "start end"
+    "type local"
+    "description description";
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 
@@ -39,7 +39,7 @@ form > .section-about {
       display: flex;
       flex-direction: column;
       width: 100%;
-      
+
       input {
         color: var(--input-text);
       }
@@ -47,12 +47,16 @@ form > .section-about {
   }
 }
 
-form .section-custom{
+form .section-custom {
   display: flex;
   flex-direction: column;
 
-  .legend-wrapper{
+  .legend-wrapper {
     margin-bottom: 1.5rem;
+  }
+
+  .input-wrapper {
+    gap: 1rem;
   }
 }
 
