@@ -1,0 +1,41 @@
+#background-photo {
+  display: none;
+}
+
+.input-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.input-content-wrapper label {
+  color: var(--text-heading);
+  font: var(--text-body-sm-semibold);
+
+  svg {
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+}
+
+.custom-file-upload {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: var(--shape-button);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  border: none;
+}
+
+.custom-file-upload:hover {
+  background: var(--brand-dark);
+}
+
+#file-name {
+  margin-left: 0.75rem;
+  color: var(--input-placeholder);
+  font: var(--text-body-md);
+}
