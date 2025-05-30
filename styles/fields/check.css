@@ -47,16 +47,52 @@
 
 /* FOOTER */
 
-.terms-wrapper {
+.checkbox-wrapper {
   display: flex;
   gap: 0.75rem;
   align-items: flex-start;
+}
 
-  & strong {
-    font-weight: 500;
-    color: var(--text-heading);
-  }
+.check-text {
+  font: var(--text-body-sm);
+}
+
+.checkbox-wrapper strong {
+  font-weight: 500;
+  color: var(--brand-light);
 }
 
 .checkbox-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+  opacity: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  cursor: pointer;
+}
+
+.checkbox-image {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url(../../assets/icons/checkbox-padrao.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+/* Show checked image when input is checked */
+.checkbox-wrapper input[type="checkbox"]:checked + .checkbox-image {
+  background-image: url(../../assets/icons/checkbox-checked.svg);
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
 }

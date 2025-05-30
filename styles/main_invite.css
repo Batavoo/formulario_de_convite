@@ -87,6 +87,10 @@ form .section-custom .custom-content-wrapper {
   */
 }
 
+fieldset.footer {
+  position: relative;
+}
+
 fieldset.footer hr {
   border: 1px solid var(--input-stroke);
   margin-bottom: 2.5rem;
